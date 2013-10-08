@@ -29,10 +29,13 @@ public class TestAllWordsCounter {
         counter.count("foo");
         counter.count("bar");
         counter.count("bar");
+
         assertEquals(counter.getCount("foo"), 3);
-        assertEquals(counter.getCount("bar"), 2);
+
         assertEquals(counter.getNumWords(), 2);
+        assertEquals(counter.getCount("bar"), 2);
     }
+
 
     @Test
     public void testCaseInsensitive() {
